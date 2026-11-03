@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Для тебя ❤️&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0d0d0d;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ff2a7f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Courier New', Courier, monospace;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#heart {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 70px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: beat 0.6s infinite alternate;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes beat {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { transform: scale(1.2); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#terminal {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="heart"&gt;❤️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="terminal"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const terminal = document.getElementById('terminal');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const logs = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"[СИСТЕМА] Запуск протокола_12_11...",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"[ИНФО] Анализ данных... Обнаружен самый важный человек.",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"[ВНИМАНИЕ] Критический перегрев в области чувств!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"Запуск бесконечного цикла любви...\n"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let logIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function printLogs() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (logIndex &lt; logs.length) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>terminal.innerHTML += logs[logIndex] + "&lt;br&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>logIndex++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(printLogs, 1000);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>startInfiniteLove();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let count = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startInfiniteLove() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>terminal.innerHTML = `❤️ Я люблю тебя v${count}.0 | while True: love += 1&lt;br&gt;` + terminal.innerHTML;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>count++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (terminal.childNodes.length &gt; 25) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>terminal.removeChild(terminal.lastChild);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(startInfiniteLove, 50);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>printLogs();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
